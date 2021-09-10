@@ -1,31 +1,16 @@
-import React , {useState} from 'react'
+import React  from 'react'
 
-export default function About() {
-const [mystyle, setmystyle] = useState({
-  backgroundColor:"white",
-color:"black"
-})
+export default function About(props) {
 
-const [btntxt, setbtntxt] = useState("Enable Dark Mode")
-
-const togglemystyle=()=>{
-  if (mystyle.color==="black")
-{setmystyle({ backgroundColor:"black",
-color:"white",
-border:"1px solid white"})
-setbtntxt("Enable Dark Mode")
-
-}else
-  {setmystyle({ backgroundColor:"white",
-  color:"black"})
-  setbtntxt("Enable Dark Mode")
-    
+let mystyle={
+  color:props.mode==="dark"?"white":"black",
+  backgroundColor:props.mode==="dark"?"#5C527F":"white",
+  border:"1px solid",
+  borderColor:props.mode==="dark"?"white":"black"
 }
-}
-
 
     return (
-        <div className="container" style={mystyle}>
+        <div className="container" style={{color:props.mode==="dark"?"white":"black"}}>
           <h1 className="my-3">About Us</h1>
             <div class="accordion" id="accordionExample">
   <div class="accordion-item" style={mystyle}>
@@ -65,9 +50,6 @@ setbtntxt("Enable Dark Mode")
     </div>
   </div>
 </div>
-<div className="container my-3">
-<button onClick={togglemystyle} className="btn btn-success ">{btntxt}</button>
-        </div>
         </div>
     )
 }
