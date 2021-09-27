@@ -1,11 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
+import image from '../asserts/iconlogo.png'
+import navstyle from './Navbar.module.css'
+
 export default function Navbar(props) {
     return (
              <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
     <div className="container-fluid">
-      <Link className="navbar-brand" to="/">{props.title}</Link>
+      <Link className={`navbar-brand ${navstyle.fontnav}`} to="/">
+      <img className="me-3" src={image} alt="logo"  height={30} width={30} />{props.title}</Link>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>

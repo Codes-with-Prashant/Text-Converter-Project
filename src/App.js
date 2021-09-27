@@ -1,4 +1,4 @@
-import './App.css';
+
 import About from './component/About';
 import Navbar from './component/Navbar';
 import TextForm from './component/TextForm';
@@ -8,7 +8,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 
@@ -18,9 +17,9 @@ const [mode, setmode] = useState("light");
 const toggleMode=()=>{
   if(mode==="light")
   {setmode("dark");
-document.body.style.backgroundColor="#2A0944";
-showalert(" Dark Mode has been Enabled", "success");
-}
+     document.body.style.backgroundColor="#2A0944";
+      showalert(" Dark Mode has been Enabled", "success");
+ }
   else{  setmode("light");
     document.body.style.backgroundColor="white";
     showalert(" Light Mode has been Enabled", "success");
