@@ -4,11 +4,11 @@ import Navbar from './component/Navbar';
 import TextForm from './component/TextForm';
 import React, { useState } from 'react'
 import Alert from './component/Alert';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+// } from "react-router-dom";
 
 
 function App() {
@@ -36,20 +36,21 @@ const showalert=(message,type)=>{
     setalert(null)
   }, 1500);
 }
-return (<><Router>
+return (<>
+{/* <Router> */}
  <Navbar title="Text Utils" mode={mode} toggleMode={toggleMode}/>
  <Alert alert={alert}/>
  <div className="container my-3">
-<Switch>
-          <Route exact path="/about">
-            <About mode={mode}/>
-          </Route>
-          <Route exact path="/">
+{/* <Switch> */}
+          {/* <Route exact path="/about"> */}
+            {/* <About mode={mode}/> */}
+          {/* </Route> */}
+          {/* <Route exact path="/"> */}
           <TextForm heading="Enter Your Text Below" mode={mode} showalert={showalert} />
-          </Route>
-        </Switch>
+          {/* </Route> */}
+        {/* </Switch> */}
 </div>
-</Router>
+{/* </Router> */}
 </>
  );
 }
