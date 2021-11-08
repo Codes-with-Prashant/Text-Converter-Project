@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Text-Converter-Project/static/css/main.6883021e.chunk.css",
-    "main.js": "/Text-Converter-Project/static/js/main.ae90ed53.chunk.js",
-    "main.js.map": "/Text-Converter-Project/static/js/main.ae90ed53.chunk.js.map",
+    "main.js": "/Text-Converter-Project/static/js/main.750214e8.chunk.js",
+    "main.js.map": "/Text-Converter-Project/static/js/main.750214e8.chunk.js.map",
     "runtime-main.js": "/Text-Converter-Project/static/js/runtime-main.1bebf1a4.js",
     "runtime-main.js.map": "/Text-Converter-Project/static/js/runtime-main.1bebf1a4.js.map",
     "static/js/2.e5edf30c.chunk.js": "/Text-Converter-Project/static/js/2.e5edf30c.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.1bebf1a4.js",
     "static/js/2.e5edf30c.chunk.js",
     "static/css/main.6883021e.chunk.css",
-    "static/js/main.ae90ed53.chunk.js"
+    "static/js/main.750214e8.chunk.js"
   ]
 }
