@@ -49,12 +49,12 @@ export default function TextForm(props) {
                 <textarea className="form-control" style={{backgroundColor: props.mode==="dark"?"#13466e":"white",color:props.mode==="dark"?"white":"black"}} value={text} onChange={handleOnChange} id="txtBoxinp" rows="8"></textarea>
                 </div>
                             
+                <button disabled={text.length===0} className="btn btn-success rounded-pill m-2" onClick={handleUpClick}>Convert To UpperCase</button>
                 <button disabled={text.length===0} className="btn btn-success rounded-pill m-2" onClick={handlelowClick}>Convert To Lower Case</button>
                 <button disabled={text.length===0} className="btn btn-success rounded-pill m-2" onClick={intoTitleCase}>Captialize</button>
-                <button disabled={text.length===0} className="btn btn-success rounded-pill m-2" onClick={handleclearClick}>Clear</button>
                 <button disabled={text.length===0} className="btn btn-success rounded-pill m-2" onClick={reversed}>Reverse</button>
                 <button disabled={text.length===0} className="btn btn-success rounded-pill m-2" onClick={handleCopy}>Copy to Clipboard</button>
-                <button disabled={text.length===0} className="btn btn-success rounded-pill m-2" onClick={handleUpClick}>Convert To UpperCase</button>
+                <button disabled={text.length===0} className="btn btn-success rounded-pill m-2" onClick={handleclearClick}>Clear</button>
                 
                 </div>
         <div className="container my-3" style={{color:props.mode==="dark"?"white":"black"}}>
